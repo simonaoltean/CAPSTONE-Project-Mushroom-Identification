@@ -27,7 +27,7 @@ The code that forms the project is also provided in the files:
     - mushroom_project_main: Main code for image data transformation and webscraping
     - mushroom_project_by_order: CNN model to classify images by order
     - order_0_mushroom_project_by_species: CNN model used to classify images of order 0 by species (similarly for order 2,3,5,6,8,10)
-The files used to in the app:
+The files used to run the app:
 - mushroom_models
     - mushroom_model: Saved model weights in file "mushroom_model" and model history
     - mushroom_model_order_0: Saved model weights in file "mushroom_model_order_0" and model history (similarly for order 2,3,5,6,8,10)
@@ -42,3 +42,4 @@ The files used to in the app:
 - templates
     - first_page: HTML template for welcome page
     - results: HTML template for results page
+- sample_images: images that can be used as input
