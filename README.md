@@ -19,14 +19,15 @@ Data for each species of mushroom is downloaded from the [GlobalFungi Database](
 The deployement of the model is done using a [Flask](https://flask.palletsprojects.com/en/2.1.x/) app, which reconstruct the saved CNN models by loading the saved model weights using Keras, and also loads data such as the species names and corresponding labels dictionaries, as well as the metadata from the samples datasets, and the edibility for each species. The app takes in the input of a mushroom images, transforms it into an array of the right dimensions to be used by the neural network models and identifies the species of the mushroom in the image. The app then uses that species to form a report using the data associated with that species using [Plotly](https://plotly.com/python-api-reference/index.html) to display the samples data in the form of pie charts, geomaps, and histograms. The data from the spottings for that species is also retrieved and the first ten spottings are displayed on the app. The app uses two HTML templates, the first to submit the image and the second to show the report.
 
 ## User Guide
-To use the project, download the repository files and extract the contents from the zip file. Click on the python file named "flask_app" and Ctrl + Click to follow the local host link "http://127.0.0.1:5000/" that appears in the command prompt window. A new page should open in your browser where you can submit an image that has been saved to your computer.
+To use the project, download the repository files and extract the contents from the zip file. Click on the python file named "flask_app" and Ctrl + Click to follow the local host link "http://127.0.0.1:5000/" that appears in the command prompt window. A new page should open in your browser where you can submit an image that has been saved to your computer. Alternatively, you can pick an image from the sample_images folder.
 
 ## Technical Documentation
-The code that forms the project is also provided in the files:
+The code that forms the project is provided in the files:
 - notebook
     - mushroom_project_main: Main code for image data transformation and webscraping
     - mushroom_project_by_order: CNN model to classify images by order
     - order_0_mushroom_project_by_species: CNN model used to classify images of order 0 by species (similarly for order 2,3,5,6,8,10)
+
 The files used to run the app:
 - mushroom_models
     - mushroom_model: Saved model weights in file "mushroom_model" and model history
